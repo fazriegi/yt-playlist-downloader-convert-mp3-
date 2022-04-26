@@ -29,6 +29,8 @@ def run(pl):
         # converts mp4 audio to mp3 audio
         subprocess.run(['ffmpeg', '-i', 
             os.path.join(filepath, default_filename),
+            # used 192kbps
+            '-b:a', '192K',
             os.path.join(filepath, new_filename)
         ])
     
