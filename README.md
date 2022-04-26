@@ -6,7 +6,8 @@ This script will download the audio of every song in a YouTube playlist, then co
 
 If error, try replace the function get_throttling_function_name in ../lib/python3.x/site-packages/pytube/cipher.py with:
 
-def get_throttling_function_name(js: str) -> str:
+
+    def get_throttling_function_name(js: str) -> str:
     """Extract the name of the function that computes the throttling parameter.
     :param str js:
         The contents of the base.js asset file.
