@@ -8,7 +8,6 @@ If error, try replace the function get_throttling_function_name in ../lib/python
 
 def get_throttling_function_name(js: str) -> str:
     """Extract the name of the function that computes the throttling parameter.
-
     :param str js:
         The contents of the base.js asset file.
     :rtype: str
