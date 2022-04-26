@@ -4,7 +4,7 @@ A YouTube playlist downloader. Requires [Python 3.6+](https://www.python.org/dow
 
 This script will download the audio of every song in a YouTube playlist, then convert the audio to mp3. To use, place it in the folder in which you want to download the playlist.
 
-If error, try replace the function get_throttling_function_name in ../lib/python3.x/site-packages/pytube/cipher.py with:
+If got error message "pytube.exceptions.RegexMatchError: get_throttling_function_name: could not find match for multiple" or "AttributeError: 'NoneType' object has no attribute 'span'", try replace the function get_throttling_function_name in ../lib/python3.x/site-packages/pytube/cipher.py with:
 
 
     def get_throttling_function_name(js: str) -> str:
